@@ -1,0 +1,41 @@
+#cards_contactanos {
+
+    .card {
+
+        height: 120px;
+        border: 1px solid transparent;
+        box-shadow: 1px 6px 12px gray;
+        
+        &:hover {
+
+            border: 1px solid $azul;
+
+        }
+
+    }
+
+}
+
+#icono {
+
+    font-size: 40px!important;
+
+}
+
+.mapa_contactanos {
+
+    iframe {
+        width: 100%;
+    }
+
+}
+
+.tratamiento {
+    
+    color: $azul!important;
+
+    &:hover {
+        color:$rojo!important;
+    
+    }
+}

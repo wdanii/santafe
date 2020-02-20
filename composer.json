@@ -1,0 +1,12 @@
+{
+    "name": "vendor/manuel",
+    "authors": [
+        {
+            "name": "sanzmanu",
+            "email": "53055872+sanzmanu@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "jasongrimes/paginator": "~1.0"
+    }
+}

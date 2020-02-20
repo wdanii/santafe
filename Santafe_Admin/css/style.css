@@ -1,0 +1,10 @@
+.bg-dark{
+    background-color: white  !important;
+    
+}
+.img_container_admin{
+    object-fit: contain;
+    height: 90%;
+    width: 90%;
+    width:300px; height:auto;
+}

@@ -1,0 +1,54 @@
+#carrusel_y_miniaturas {
+    
+    .caracteristicas_inmueble {
+
+        #iconos_redes {
+            
+            i,p {
+                font-size: 20px;
+            }   
+        }   
+
+        a {
+            &:hover {
+                color: $rojo;
+            }
+        }
+
+    }
+
+    .video {
+        overflow: hidden;
+        height: 300px;
+    }
+
+    .mapa {
+        overflow: hidden;
+        height: 300px;
+    }
+
+    #asesor {
+
+        .imagen {
+            width: 100%;
+            height: 200px;
+
+            img {
+                width: 70%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+    }
+
+    .politica { 
+            
+        a {
+            color:$azul;
+        }
+
+    }
+
+
+}

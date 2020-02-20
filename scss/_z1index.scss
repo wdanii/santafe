@@ -1,0 +1,762 @@
+@font-face {
+    font-family: 'champagne_bold';
+    src: url("../fonts/Champagne\ &\ Limousines\ Bold.ttf");
+}
+
+body {
+    font-family: 'champagne_bold';
+}
+
+a,div,button {
+    transition: all 225ms ease-in-out;
+}
+
+p,h1,h2,h3,h4,h5,h6, {
+    margin: 0;
+}
+
+strong {
+    font-weight: bold !important;
+}
+
+a {
+
+    text-decoration: none!important;
+    color: black;
+
+    &:hover {
+        color: $azul;
+    }
+}
+
+p {
+    font-size: 18px;
+}
+
+// ------------------ VARIABLES-COLORES ------------------
+.blanco {
+    color:white;
+}
+
+.negro {
+    color: black;
+}
+
+.azul {
+    color: $azul;
+}
+
+.azul_oscuro {
+    color: $azul_oscuro;
+}
+
+.bg_azul {
+    background-color: $azul;
+}
+
+.rojo {
+    color: $rojo;
+}
+
+.rojo_oscuro {
+    color: $azul_oscuro;
+}
+
+.bg_rojo {
+    background-color: $rojo;
+}
+// ------------------ VARIABLES-COLORES ------------------
+
+.boton {
+
+    color: white;
+    background-color: $azul;
+
+    &:hover {
+        background-color: $rojo;
+        color: white;
+    }
+}
+
+.boton_cerrar {
+    color: white;
+    background-color: $rojo;
+
+    &:hover {
+        background-color: $rojo_oscuro;
+        color: white;
+    }
+}
+
+.boton_enviar {
+
+    color: white;
+    background-color: $azul;
+
+    &:hover {
+        background-color: $azul_oscuro;
+        color: white;
+    }
+
+}
+
+.boton_footer {
+    color: white;
+    background-color: $rojo;
+
+    &:hover {
+        background-color: white;
+        color: $azul;
+
+    }
+}
+
+.margen_top {
+    margin-top: 192px;
+}
+
+.fondo_negro {
+    z-index: 200;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.555);
+    width: 100%;
+    height: 100%;
+}
+
+header {
+
+    z-index: 4000;
+
+    section {
+        box-shadow: 0 -3px 25px $azul;
+        background-color: white;
+    }
+
+    #informacion_contacto {
+
+        .redes {
+            font-size: 20px;
+        }
+
+    }
+
+    #menu {
+
+        font-size: 20px;
+
+        a {
+                
+            &:hover {
+                color: $azul;
+            }
+        }
+
+        .active2 { 
+            color: $rojo!important;
+        }
+
+        .logo {
+
+            width: 200px;
+            height: 135px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+        .botonpse {
+
+            width: 45px;
+            transition: all 250ms ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+        }
+
+    }
+
+}
+
+#carrusel {
+
+    .imagen {
+
+        filter: brightness(0.6);
+        width: 100%;
+        height: 500px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+#formulario {
+
+    position: relative;
+    bottom: 100px;
+
+    .container {
+        z-index: 100;
+    }
+
+}
+
+#propiedades_destacadas {
+
+    margin-top: -60px;
+
+    .card {
+
+        height: 372px;
+
+
+        .card-body {
+            color: black;
+
+            &:hover {
+                color:black;
+            }
+        }
+
+        img {
+            object-fit: contain!important;
+            background-color: #a9a9a9ab;
+        }
+        
+
+        &:hover {
+
+            .imagen {
+
+                .lupa {
+                    top: 50%;
+                    font-size: 25px;
+                    opacity: 1;
+                    display: inherit;
+                }
+
+                img {
+                    transform: scale(1.1);
+                    filter: brightness(0.4);
+                }
+            }
+            
+        }
+
+        .imagen {
+            position: relative;
+            overflow: hidden;   
+            font-size: 12px;
+            width: 100%;
+            height: 200px;
+
+            img {
+                transition: all 250ms ease-in-out;
+                filter: brightness(0.6);
+                width: 100%;
+                height: 100%;
+            }
+
+            .nombre_gestiones {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            .precio {
+                font-size: 20px;
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+            }
+
+            .lupa {
+             transition: all 300ms ease;
+             position: absolute;
+             top: 0;
+             left: 50%; 
+             font-size: 100px;
+             color: white;
+             opacity: 0;
+            }
+        }
+
+    }
+
+}
+
+#quienes_somos {
+
+    .cards_servicios {
+        
+        transition: all 250ms ease-in-out;
+        border: 1px solid gray;
+        // height: 150px;
+        color: black;
+
+        &:hover {
+
+            a {
+                color: black;
+            }
+
+            border: none;
+            box-shadow: 0 0px 7px grey;
+
+            .circulo_iconos {
+                color: white;
+                background-color: $azul;
+            }
+        }
+
+    }
+
+    .circulo_iconos {
+
+        color: $azul;
+        border: 1px solid gray;
+        transition: all 250ms ease-out;
+        width: 75px;
+        height: 75px;
+
+        .icono {
+            font-size: 35px;
+        }
+    }
+
+}
+
+.politicas_contacto {
+    color: $azul; 
+    &:hover {
+        color:$rojo;
+    }
+}
+
+.espacio_top {
+    margin-top: 151px;
+}
+
+
+#contador_estadisticas {
+    
+    position: relative;
+    width: 100%;
+    height: 150px;
+
+    .imagen {
+        z-index: 100;
+        position: absolute;
+        background-image: url("../images/1.jpg");
+        background-attachment: fixed;
+        background-position: center center;
+        width:100%;
+        height: 100%;
+    }
+
+    .contenido_estadisticas {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index:300;
+        color: white;
+
+        p {
+            font-size: 25px;
+        }
+    }
+
+}
+
+// #aliados {
+
+//     .carousel-itema>.d-flex {
+//         height: 120px;
+//     } 
+
+//     .padre_contenedor_imagenes {
+
+//         width: 100%;
+//         height: 200px;
+//         overflow: hidden;
+
+//         .contenedor_imagenes {
+
+//             width: 100%;
+//             height: 100%;            
+    
+//             img {
+//                 width: 250px;
+//                 // height: 100%;
+//             }
+//         }
+
+//         .contenedor_imagenes_main {
+
+//             margin-left: 100%;
+//             animation: animacion_aliados 20s ease-in-out infinite alternate;
+
+
+//         }
+
+//         @keyframes animacion_aliados {
+//             from {
+//                 margin-left: 100%;
+//             }
+
+//             to {
+//                 margin-left: -95%;
+
+//             }
+
+//         }
+//     }
+
+    
+
+//     .imagenes{
+//         height: 100px;
+
+//         img {
+//             width: 100%;
+//             height: 100%;
+//         }
+//     }
+
+// }
+
+#aliados {
+
+    .carousel-item>div{
+        height: 100px;
+    }
+
+    .protecsa {
+        width: 74%!important;
+        height: 120px;
+    }
+
+
+
+    ol {
+        position: absolute;
+        bottom: -50%;
+    }
+
+    li {
+        background-color: darkgray;
+        height: 15px!important;
+        width: 15px!important;
+        border-radius: 50%;
+    }
+
+
+
+
+}
+
+
+
+
+#consignar_inmueble {
+
+    position: relative;
+    width: 100%;
+    height:250px;
+    overflow: hidden;
+
+    .imagen {
+
+        width: 100%;
+        height:100%;
+        z-index: 100;
+
+        img {
+            width: 100%;
+            z-index: 100;
+            bottom: -307px;
+        }  
+    }
+
+    .contenido{
+        
+        z-index: 300;
+        width: 100%;
+        height: 100%;
+
+    }
+
+}
+
+#ultimas_noticias {
+
+    a {
+        
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    .card {
+
+        .animacion_ver_mas {
+            opacity: 0;
+            position:absolute; 
+            top:50%;
+        }
+
+        &:hover {
+
+            .animacion_ver_mas {
+
+                animation: animacion_ver_mas 350ms ease-in-out forwards;
+
+            }
+
+            img {
+                filter: brightness(0.5);
+            }
+
+        }
+
+        @keyframes animacion_ver_mas {
+            from {
+                top: 0%;
+                font-size: 40px;
+                opacity: 0;
+            }
+
+            to {
+                top: 50%;
+                font-size: 20px;
+                opacity: 1;
+            }
+        }
+
+        img {
+            transition: all 350ms ease;
+            height: 250px;
+        }
+
+        p {
+            &::before {
+                content: "";
+                left: 0;
+                top: 0;
+                width: 90%;
+                height: 1px;
+                position: absolute;
+                background-color: $azul;
+            }
+        }
+
+
+    }
+
+    .card-body {
+
+        color: black;
+
+        a {
+            color: white;
+        }
+
+    }
+
+}
+
+footer {
+    background-color: $azul;
+
+    a {
+        &:hover {
+            color: black;
+        }
+    }
+
+    .contenido {
+
+        .mapa {
+            height: 200px;
+
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+    }
+
+    .copyright {
+
+        p {
+
+            a {
+                color: $azul;
+                &:hover {
+                    color: $rojo;
+                }
+            }
+
+        }
+
+        background-color: #121214;
+
+    }
+
+
+}
+
+.divisor  {
+    img {
+        width: 10%;
+        height: 13px;
+    }
+}
+
+
+
+
+/* estilos blog */
+.contenedor_footer{
+    position: absolute;
+    width: 100%;
+}
+.cont_noticias{
+    margin-top: 7rem;
+    @include media-breakpoint-up(md){
+        margin-top: 6rem;
+    }
+    @include media-breakpoint-up(lg){
+        margin-top: 3rem;
+    }
+}
+#cont_img_noticia{
+    width: 100%;
+    height: 100%;
+    @include media-breakpoint-up(md){
+        float: left;
+        object-fit: contain ;
+        width: 50%;
+        height: 50%;
+    }
+   
+}
+
+.list-info-asesor{
+    list-style: none;
+    display: flex;
+}
+
+.asesoricon{
+    color: $rojo;
+    :hover{
+        color: gray;
+    }
+}
+.color_nombre_asesor{
+    color: $azul;
+}
+
+.toolti {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .toolti .tooltiptext {
+    visibility: hidden;
+    background-color:   black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: -132%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  
+  .toolti:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+
+.subir {
+    display: none;
+    transition: all 200ms ease-in-out;
+    padding: 5px;
+    background-color: $azul;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 47px;
+    right: 20px;
+    -webkit-box-shadow: -1px 1px 5px 1px grey;
+    box-shadow: -1px 1px 5px 1px grey;
+    z-index: 5100;
+
+    &:hover {
+        background-color: $rojo;
+    }
+}
+
+.color_blanco_url{
+    color: white !important;
+} 
+
+.fondo_azul {
+    z-index: 200;
+    position: absolute;
+    background-color: #005ecf61;
+    width: 100%;
+    height: 100%;
+}
+
+.linea {
+    
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 20%;
+        top: calc(50% + 2px);
+        height: 2px;
+        background-color: $azul;
+        left: -23%;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 20%;
+        top: calc(50% + 2px);
+        height: 2px;
+        background-color: $azul;
+        margin-left: 10px;
+    }
+
+}
+
+
+.afianza {
+    height: 100px;
+}
