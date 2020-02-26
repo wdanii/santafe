@@ -568,7 +568,7 @@ $page = "Inicio" ?>
                         <div class="form-group col-12">
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1" requiered>
-                                <label class="form-check-label" for="exampleCheck1">Acepto <a class="politicas_contacto" href="Politicas_de_seguridad.pdf" target="_blank">la política y tratamiento de datos</a></label>
+                                <label class="form-check-label" for="exampleCheck1">Acepto <a class="politicas_contacto" target="_blank" href="archivos/politica_tratamiendo_datos.pdf" download="Politica de protección de datos">la política y tratamiento de datos</a></label>
                             </div>
                         </div>
 

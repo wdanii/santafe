@@ -338,7 +338,7 @@ $page = "Detalle de Inmueble" ?>
                         <textarea class="form-control" name="mensaje" placeholder="Mensaje" rows="3" required></textarea>
                         <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-                            <label class="politica form-check-label" for="exampleCheck1"> Confimo que he leído, entendido y acepto la <a class="a_politica" href="POLITICA_DE_PROTECCION_DE_DATOS.pdf" download="POLITICA_DE_PROTECCION_DE_DATOS.pdf">política de tratamiento de datos personales.</a> </label>
+                            <label class="politica form-check-label" for="exampleCheck1"> Confimo que he leído, entendido y acepto la <a class="a_politica" target="_blank" href="archivos/politica_tratamiendo_datos.pdf" download="Politica de protección de datos">política de tratamiento de datos personales.</a> </label>
                         </div>
                         <select name="codigo" class="invisible display:none">
                             <option value=" <?php echo $co; ?>"> <?php echo $co; ?></option>

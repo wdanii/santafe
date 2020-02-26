@@ -155,7 +155,7 @@ $page = "Contáctanos" ?>
 
                 <div class="ml-3 form-group form-check">
                     <input type="checkbox" class="form-check-input" required>
-                    <label class="form-check-label" for="exampleCheck1"> Confimo que he leído, entendido y acepto la <a class="tratamiento" href="POLITICA_DE_PROTECCION_DE_DATOS.pdf" download="POLITICA_DE_PROTECCION_DE_DATOS.pdf"></span>política de tratamiento de datos personales.</a> </label>
+                    <label class="form-check-label" for="exampleCheck1"> Confimo que he leído, entendido y acepto la <a class="tratamiento" target="_blank" href="archivos/politica_tratamiendo_datos.pdf" download="Politica de protección de datos"></span>política de tratamiento de datos personales.</a> </label>
                 </div>
 
 
