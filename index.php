@@ -30,7 +30,7 @@ $page = "Inicio" ?>
                 <div class="carousel-item active">
 
                     <div class="imagen">
-                        <img src="images/slider_11.png" class="d-block w-100" alt="...">
+                        <img src="images/slider_1.jpg" class="d-block w-100" alt="...">
                     </div>
 
                     <div class="carousel-caption h-100 p-0 d-md-block">
@@ -44,7 +44,7 @@ $page = "Inicio" ?>
                 <div class="carousel-item">
 
                     <div class="imagen">
-                        <img src="images/slider_22.png" class="d-block w-100" alt="...">
+                        <img src="images/slider_2.jpg" class="d-block w-100" alt="...">
                     </div>
 
                     <div class="carousel-caption h-100 p-0 d-md-block">
@@ -243,7 +243,7 @@ $page = "Inicio" ?>
         <div class="fondo_negro"></div>
 
 
-        <h2 class="contenido_estadisticas w-100 h-100 d-flex align-items-center justify-content-center"> Su Inmueble en manos profesionales </h2>
+        <h2 class="contenido_estadisticas w-100 h-100 d-flex align-items-center justify-content-center"> ¡Tu Inmueble en manos profesionales! </h2>
 
         <!-- <div class="contenido_estadisticas container d-flex align-items-center justify-content-around" id="contador">
 

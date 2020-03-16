@@ -44,7 +44,7 @@ $redes_sociales = [
 //datos de contacto 
 $datos_contacto = [
 	"direccion" => [
-		"direccion" => "Carrera 29 # 40A - 57 Piso 2,<br/> Barrio La Soledad, Bogotá - Colombia",
+		"direccion" => "Carrera 29 # 40A - 57 Piso 2<br/> Barrio La Soledad<br> Bogotá - Colombia",
 		"icono" => "fas fa-map-marker-alt",
 	],
 	"telefono_fijo" => [
