@@ -40,19 +40,19 @@ $page = "Quiénes Somos" ?>
     <!-- BANNER -->
 
     <!-- TEXTOS NOSOTROS -->
-    <section id="textos_nosotros" class="mt-5">
+    <section id="textos_nosotros" class="container  mt-5">
 
-        <div class="d-flex flex-wrap container align-items-start justify-content-center">
+        <div class="d-flex flex-wrap align-items-start justify-content-center">
 
             <!-- IMAGEN -->
-            <div class="d-flex align-items-center imagen rounded w-100 h-100 col-6 justify-content-center">
+            <div class="d-flex align-items-center imagen rounded w-100 h-100 col-12 col-md-6 col-lg-6 col-xl-6 justify-content-center">
                 <img class="w-100 h-100 rounded" src="images/empresa.jpg" alt="">
             </div>
             <!-- IMAGEN -->
 
             <!-- TEXTO NOSOTROS Y VALORES -->
-            <div class="col-6 w-100 h-100 d-flex align-items-center">
-                <p> <?php echo $texto_quienes_somos['nosotros']['parrafo'] ?> </p>
+            <div class="mt-3 mt-md-0 mt-lg-0 mt-xl-0 col-12 col-md-6 col-lg-6 col-xl-6 w-100 h-100 d-flex align-items-center">
+                <p class="text-justify"> <?php echo $texto_quienes_somos['nosotros']['parrafo'] ?> </p>
 
                 <!-- <div class="col-12 p-0 mt-5">
                     <h2 class="text-center azul"> <?php echo $texto_quienes_somos['valores']['titulo'] ?> </h2>
@@ -93,8 +93,8 @@ $page = "Quiénes Somos" ?>
 
         <div class="container">
 
-            <div class="container-fluid d-flex align-items-center justify-content-center my-5">
-                <h2 class="linea position-relative"> Conoce Nuestros Asesores </h2>
+            <div class="overflow-hidden container-fluid d-flex align-items-center justify-content-center my-5">
+                <h2 style="font-size:23px" class="linea position-relative"> Conoce Nuestros Asesores </h2>
             </div>
 
             <div class=" d-flex justify-content-center">

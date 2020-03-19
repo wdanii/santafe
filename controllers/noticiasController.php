@@ -50,7 +50,7 @@ function modelo_ultima_noticia($r)
               $descrip = $descrip . '...';
           }
        echo'
-       <div class="col-4 mt-5">
+       <div class="col-12 col-md-6 col-lg-4 col-xl-4 mt-5">
        <a href="./detalle-noticia.php?co=' . $r[$i]['id'] . '">
            <div class="card">
 

@@ -1,5 +1,5 @@
 <!-- Codigo del preloader -->
- <style>
+ <!-- <style>
     #wrap-preload {
         position: fixed;
         z-index: 10;
@@ -44,7 +44,7 @@
     window.addEventListener("load", function() {
         loader.style.visibility = "hidden";
     });
-</script> 
+</script>  -->
 <!-- Fin de codigo preloader -->
 
 
@@ -60,22 +60,22 @@
 
             <div>
                 <a target="_blank" class="d-flex align-items-center" href="tel:<?php echo $datos_contacto['telefono_fijo']['link'] ?>">
-                    <i class="mr-2 <?php echo $datos_contacto['telefono_fijo']['icono'] ?>"></i>
-                    <p class="mr-3"><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?></p>
+                    <i style="font-size: 20px" class="mr-2 <?php echo $datos_contacto['telefono_fijo']['icono'] ?>"></i>
+                    <p class="mr-3 d-none d-lg-block d-xl-block"><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?></p>
                 </a>
             </div>
 
             <div>
                 <a target="_blank" class="d-flex align-items-center" href="mailto:<?php echo $datos_contacto['correo']['correo'] ?>">
-                    <i class="mr-2 <?php echo $datos_contacto['correo']['icono'] ?>"></i>
-                    <p class="mr-3"><?php echo $datos_contacto['correo']['correo'] ?></p>
+                    <i style="font-size: 20px" class="mr-2 <?php echo $datos_contacto['correo']['icono'] ?>"></i>
+                    <p class="mr-3 d-none d-lg-block d-xl-block"><?php echo $datos_contacto['correo']['correo'] ?></p>
                 </a>
             </div>
 
             <div>
                 <a target="_blank" class="d-flex align-items-center" target="blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>">
-                    <i class="mr-2 <?php echo $datos_contacto['whatsapp']['icono'] ?>"></i>
-                    <p class="mr-3"><?php echo $datos_contacto['whatsapp']['imprimir'] ?></p>
+                    <i style="font-size: 20px" class="mr-2 <?php echo $datos_contacto['whatsapp']['icono'] ?>"></i>
+                    <p class="mr-3 d-none d-lg-block d-xl-block"><?php echo $datos_contacto['whatsapp']['imprimir'] ?></p>
                 </a>
             </div>
 

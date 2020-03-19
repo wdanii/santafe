@@ -27,42 +27,42 @@ $page = "Inicio" ?>
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item h-100 w-100 active">
 
-                    <div class="imagen">
-                        <img src="images/slider_1.jpg" class="d-block w-100" alt="...">
+                    <div class="imagen h-100">
+                        <img src="images/slider_1.jpg" class="d-block h-100 w-100" alt="...">
                     </div>
 
                     <div class="carousel-caption h-100 p-0 d-md-block">
-                        <h2 class="blanco d-flex align-items-center justify-content-center h-100">
+                        <h2 class="texto_carrusel blanco d-flex align-items-center justify-content-center h-100">
                             Inmobiliaria Santa Fe DC
                         </h2>
                     </div>
 
                 </div>
 
-                <div class="carousel-item">
+                <div class="carousel-item h-100 w-100">
 
-                    <div class="imagen">
-                        <img src="images/slider_2.jpg" class="d-block w-100" alt="...">
+                    <div class="imagen h-100">
+                        <img src="images/slider_2.jpg" class="d-block h-100 w-100" alt="...">
                     </div>
 
                     <div class="carousel-caption h-100 p-0 d-md-block">
-                        <h2 class="blanco d-flex align-items-center justify-content-center h-100">
+                        <h2 class="texto_carrusel blanco d-flex align-items-center justify-content-center h-100">
                             Permítenos guiarte y encuentra tu Inmueble Ideal
                         </h2>
                     </div>
 
                 </div>
 
-                <div class="carousel-item">
+                <div class="carousel-item h-100 w-100">
 
-                    <div class="imagen">
-                        <img src="images/slider_3.jpg" class="d-block w-100" alt="...">
+                    <div class="imagen h-100">
+                        <img src="images/slider_3.jpg" class="d-block h-100 w-100" alt="...">
                     </div>
 
                     <div class="carousel-caption h-100 p-0 d-md-block">
-                        <h2 class="blanco d-flex align-items-center justify-content-center h-100">
+                        <h2 class="texto_carrusel blanco d-flex align-items-center justify-content-center h-100">
                             Nuestros agentes experimentados tienen el conocimiento y las habilidades para asesorarte.
                         </h2>
                     </div>
@@ -93,15 +93,13 @@ $page = "Inicio" ?>
     <!-- BUSCADOR -->
 
     <!-- PROPIEDADES DESTACADAS -->
-    <section id="propiedades_destacadas">
+    <section id="propiedades_destacadas" class="mt-5 mt-md-0 mt-lg-0 mt-xl-0">
 
         <div class="container">
 
-            <div class="container-fluid d-flex align-items-center justify-content-center my-5">
+            <div class="overflow-hidden container-fluid d-flex align-items-center justify-content-center my-5">
                 <h2 class="linea position-relative d-inline-block"> Propiedades Destacadas </h2>
             </div>
-
-
 
 
             <!-- CARDS -->
@@ -125,19 +123,19 @@ $page = "Inicio" ?>
 
         <div class="container">
 
-            <div class="container-fluid d-flex align-items-center justify-content-center my-5">
+            <div class="overflow-hidden container-fluid d-flex align-items-center justify-content-center my-5">
                 <h2 class="linea position-relative"> Quiénes Somos </h2>
             </div>
 
 
-            <p class="mb-5"> <?php echo $texto_quienes_somos['nosotros']['parrafo'] ?> </p>
+            <p class="mb-5 text-justify text-lg-left text-xl-left"> <?php echo $texto_quienes_somos['nosotros']['parrafo'] ?> </p>
         </div>
 
         <!-- CARDS QUIENES SOMOS -->
         <div class="d-flex align-items-center justify-content-center flex-wrap">
 
             <!-- arrendamiento 1-->
-            <div class="col-4 mb-3">
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 mb-3">
                 <a href="servicios.php#ancla1">
                     <div class="cards_servicios rounded py-4">
 
@@ -152,7 +150,7 @@ $page = "Inicio" ?>
 
             </div>
             <!-- corretaje 2-->
-            <div class="col-4 mb-3">
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 mb-3">
                 <a href="servicios.php#ancla2">
                     <div class="cards_servicios rounded py-4">
 
@@ -167,7 +165,7 @@ $page = "Inicio" ?>
 
             </div>
             <!-- ventas 3-->
-            <div class="col-4 mb-3">
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 mb-3">
                 <a href="servicios.php#ancla3">
                     <div class="cards_servicios rounded py-4">
 
@@ -182,7 +180,7 @@ $page = "Inicio" ?>
 
             </div>
             <!-- avaluo 4-->
-            <div class="col-4">
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 mb-3 mb-md-0 mb-lg-0 mb-xl-0">
                 <a href="servicios.php#ancla4">
                     <div class="cards_servicios rounded py-4">
 
@@ -197,7 +195,7 @@ $page = "Inicio" ?>
 
             </div>
             <!-- asistencia 5-->
-            <div class="col-4">
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 mb-3 mb-md-0 mb-lg-0 mb-xl-0">
                 <a href="servicios.php#ancla5">
                     <div class="cards_servicios rounded py-4">
 
@@ -205,14 +203,14 @@ $page = "Inicio" ?>
                             <i class="icono <?php echo $iconos_servicios['asistencias_locativas'] ?>"></i>
                         </div>
 
-                        <h4 class="text-center mt-2"> <?php echo $texto_servicios['asistencias_locativas']['titulo'] ?> </h4>
+                        <h4 style="font-size: 21px;" class="text-center mt-2"> <?php echo $texto_servicios['asistencias_locativas']['titulo'] ?> </h4>
                     </div>
 
                 </a>
 
             </div>
             <!-- seguros 6-->
-            <div class="col-4">
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 mb-3 mb-md-0 mb-lg-0 mb-xl-0">
                 <a href="servicios.php#ancla6">
                     <div class="cards_servicios rounded py-4">
 
@@ -243,7 +241,7 @@ $page = "Inicio" ?>
         <div class="fondo_negro"></div>
 
 
-        <h2 class="contenido_estadisticas w-100 h-100 d-flex align-items-center justify-content-center"> ¡Tu Inmueble en manos profesionales! </h2>
+        <h2 class="contenido_estadisticas w-100 h-100 d-flex text-center align-items-center justify-content-center"> ¡Tu Inmueble en manos profesionales! </h2>
 
         <!-- <div class="contenido_estadisticas container d-flex align-items-center justify-content-around" id="contador">
 
@@ -272,111 +270,10 @@ $page = "Inicio" ?>
     </section>
     <!-- CONTADOR ESTADISTICAS  -->
 
-    <!-- ALIADOS  -->
-    <section id="aliados" class="mt-5 container">
+    <!-- ALIADOS -->
+    <section id="aliados" class="d-none d-md-block d-lg-block d-xl-block my-5 container">
 
-        <!-- <div class="col-12">
-
-            <div class="owl-carousel owl-theme d-flex align-items-center justify-content-center" id="aliados_slide">
-
-                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes contenedor_imagenes_main d-flex justify-content-center">
-                    <img src="images/solidaria.png" alt="">
-                </div>
-
-
-                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
-                    <img src="images/caja_social.png" alt="">
-                </div>
-
-
-                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
-                    <img src="images/afiansa.png" alt="">
-                </div>
-
-
-                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
-                    <img src="images/libertador.png" alt="">
-                </div>
-
-
-                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
-                    <img src="images/liberty.png" alt="">
-                </div>
-
-
-                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
-                    <img src="images/protecsa.png" alt="">
-                </div>
-
-
-                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
-                    <img src="images/seguros_estado.png" alt="">
-                </div>
-
-                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
-                    <img src="images/simi.png" alt="">
-                </div>
-
-            </div>
-
-
-        </div> -->
-
-        <!-- <div class="col-12">
-
-            <div class="owl-carousel owl-theme d-flex align-items-center justify-content-center" id="aliados_slide">
-
-                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes contenedor_imagenes_main d-flex justify-content-center">
-                    <img src="images/solidaria.png" alt="">
-                </div>
-
-
-                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
-                    <img src="images/caja_social.png" alt="">
-                </div>
-
-
-                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
-                    <img src="images/afiansa.png" alt="">
-                </div>
-
-
-                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
-                    <img src="images/libertador.png" alt="">
-                </div>
-
-
-                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
-                    <img src="images/liberty.png" alt="">
-                </div>
-
-
-                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
-                    <img src="images/protecsa.png" alt="">
-                </div>
-
-
-                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
-                    <img src="images/seguros_estado.png" alt="">
-                </div>
-
-                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
-                    <img src="images/simi.png" alt="">
-                </div>
-
-            </div>
-
-
-        </div> -->
-
-    </section>
-    <!-- ALIADOS  -->
-
-
-
-    <section id="aliados" class="my-5 container">
-
-        <div class="container-fluid d-flex align-items-center justify-content-center my-5">
+        <div class="overflow-hidden container-fluid d-flex align-items-center justify-content-center my-5">
             <h2 class="linea position-relative"> Nuestros Aliados </h2>
         </div>
 
@@ -422,6 +319,112 @@ $page = "Inicio" ?>
             </a>
         </div>
     </section>
+    <!-- ALIADOS -->
+
+    <!-- ALIADOS (RESPONSIVE)  -->
+    <section id="aliados" class="d-md-none d-lg-none d-xl-none mt-5 container">
+
+        <div class="overflow-hidden container-fluid d-flex align-items-center justify-content-center my-5">
+            <h2 class="linea position-relative"> Nuestros Aliados </h2>
+        </div>
+
+        <div class="col-12">
+
+            <div class="owl-carousel owl-theme d-flex align-items-center justify-content-center" id="aliados_slide">
+
+                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes contenedor_imagenes_main d-flex justify-content-center">
+                    <img src="images/solidaria.png" alt="">
+                </div>
+
+
+                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
+                    <img src="images/caja_social.png" alt="">
+                </div>
+
+
+                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
+                    <img src="images/afiansa.png" alt="">
+                </div>
+
+
+                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
+                    <img src="images/libertador.png" alt="">
+                </div>
+
+
+                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
+                    <img src="images/liberty.png" alt="">
+                </div>
+
+
+                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
+                    <img src="images/protecsa.png" alt="">
+                </div>
+
+
+                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
+                    <img src="images/seguros_estado.png" alt="">
+                </div>
+
+                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
+                    <img src="images/simi.png" alt="">
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- <div class="col-12">
+
+            <div class="owl-carousel owl-theme d-flex align-items-center justify-content-center" id="aliados_slide">
+
+                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes contenedor_imagenes_main d-flex justify-content-center">
+                    <img src="images/solidaria.png" alt="">
+                </div>
+
+
+                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
+                    <img src="images/caja_social.png" alt="">
+                </div>
+
+
+                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
+                    <img src="images/afiansa.png" alt="">
+                </div>
+
+
+                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
+                    <img src="images/libertador.png" alt="">
+                </div>
+
+
+                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
+                    <img src="images/liberty.png" alt="">
+                </div>
+
+
+                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
+                    <img src="images/protecsa.png" alt="">
+                </div>
+
+
+                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
+                    <img src="images/seguros_estado.png" alt="">
+                </div>
+
+                <div style="height:200px" class="align-items-center mx-2 contenedor_imagenes d-flex justify-content-center">
+                    <img src="images/simi.png" alt="">
+                </div>
+
+            </div>
+
+
+        </div> -->
+
+    </section>
+    <!-- ALIADOS (RESPONSIVE)  -->
+
 
     <!-- <section class="container">
         <div id="ejemplo" class="carousel slide" data-ride="carousel">
@@ -482,7 +485,7 @@ $page = "Inicio" ?>
 
         <div class="d-flex flex-column align-items-center justify-content-center blanco contenido position-absolute">
 
-            <h2> <span style="font-family:Arial, Helvetica, sans-serif">¿</span>Deseas Consignar tu inmueble con nosotros<span style="font-family:Arial, Helvetica, sans-serif">?</span> </h2>
+            <h2 class="text-center"> <span style="font-family:Arial, Helvetica, sans-serif">¿</span>Deseas Consignar tu inmueble con nosotros<span style="font-family:Arial, Helvetica, sans-serif">?</span> </h2>
 
             <!-- Button trigger modal -->
             <button type="button" class="btn boton mt-2" data-toggle="modal" data-target="#exampleModal">
@@ -589,7 +592,7 @@ $page = "Inicio" ?>
 
         <div class="container">
 
-            <div class="container-fluid d-flex align-items-center justify-content-center mt-5">
+            <div class="overflow-hidden container-fluid d-flex align-items-center justify-content-center mt-5">
                 <h2 class="linea position-relative"> Últimas Noticias </h2>
             </div>
 

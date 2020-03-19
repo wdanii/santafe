@@ -10,7 +10,7 @@ function modelo_inmueble($r, $cantidad_inmuebles)
 
         echo '
 
-        <div class="col-4 mb-5">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-5">
         <a href="./detalle_inmueble.php?co=' . $codigo . '">
             <div class="card">
 
@@ -102,7 +102,7 @@ function total_inmuebles($r)
         // fin de recortar cadena
         echo '
 
-        <div class="col-4 mt-5">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-4 mt-5">
                     <a href="./detalle_inmueble.php?co=' . $codigo . '">
                         <div class="card">
 
