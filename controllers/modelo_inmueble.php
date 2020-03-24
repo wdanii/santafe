@@ -186,7 +186,7 @@ function modelo_inmueble_similare($r)
 
         echo '
 
-        <div class="col-10 mb-5">
+        <div class="col-12 col-lg-10 col-xl-10 mb-5">
         <a href="./detalle_inmueble.php?co=' . $codigo . '">
             <div class="card">
 

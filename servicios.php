@@ -42,17 +42,17 @@ $page = "Servicios" ?>
     <section id="servicios">
         <div class="container">
 
-        <div class="container-fluid d-flex align-items-center justify-content-center my-5"> 
-            <h2 class="linea position-relative"> Nuestros Servicios </h2>
-        </div>
+            <div class="container-fluid d-flex align-items-center justify-content-center my-5">
+                <h2 class="linea position-relative"> Nuestros Servicios </h2>
+            </div>
 
             <!-- TEXTO SERVICIOS -->
-            <div class="servicios d-flex flex-wrap">
+            <div class="d-flex flex-wrap">
 
                 <!-- ARRENDAMIENTO  1-->
-                <div class="mt-4 align-items-center justify-content-center p-0 col-12 flex-wrap d-flex mb-5">
+                <div class="mt-5 col-12 d-flex flex-wrap">
 
-                    <div class="pr-4 col-12 col-md-8 col-lg-8 col-xl-8 text-justify">
+                    <div class="order-2 order-lg-1 order-xl-1 col-12 col-md-6 col-xl-6">
 
                         <div class="d-flex align-items-center justify-content-center">
                             <div id="ancla1" class="ancla"></div>
@@ -65,22 +65,21 @@ $page = "Servicios" ?>
 
                     </div>
 
-                    <div class="p-0 h-100 imagenes_servicios col-12 col-md-4 col-lg-4 col-xl-4">
-                        <img class="rounded h-100 " src="images/arriendos.png" alt="">
+                    <div class="imagen mb-3 mb-lg-0 mb-xl-0 order-1 order-lg-2 order-xl-2 col-12 col-md-6 col-xl-6">
+                        <img class="rounded h-100 w-100 " src="images/arriendos.png" alt="">
                     </div>
 
                 </div>
                 <!-- ARRENDAMIENTO -->
 
-
                 <!-- SEGUROS 6-->
-                <div class="align-items-center justify-content-center p-0 col-12 flex-wrap d-flex mb-5">
+                <div class="mt-5 col-12 d-flex flex-wrap">
 
-                    <div class="p-0 h-100 imagenes_servicios col-12 col-md-4 col-lg-4 col-xl-4">
-                        <img class="rounded h-100 " src="images/seguros.png" alt="">
+                    <div class="imagen mb-3 mb-lg-0 mb-xl-0 col-12 col-md-6 col-xl-6">
+                        <img class="rounded h-100 w-100" src="images/seguros.png" alt="">
                     </div>
 
-                    <div class="pl-4 col-12 col-md-8 col-lg-8 col-xl-8 text-justify">
+                    <div class="col-12 col-md-6 col-xl-6">
 
                         <div class="d-flex align-items-center justify-content-center">
                             <div id="ancla6" class="ancla"></div>
@@ -98,9 +97,9 @@ $page = "Servicios" ?>
 
 
                 <!-- CORRETAJE 2-->
-                <div class="align-items-center justify-content-center p-0 col-12 flex-wrap d-flex mb-5">
+                <div class="mt-5 col-12 d-flex flex-wrap">
 
-                    <div class="pr-4 col-12 col-md-8 col-lg-8 col-xl-8 text-justify mt-3">
+                    <div class="d-flex align-items-center flex-column justify-content-center order-2 order-lg-1 order-xl-1 col-12 col-md-6 col-xl-6">
 
                         <div class="d-flex align-items-center justify-content-center">
                             <div id="ancla2" class="ancla"></div>
@@ -112,21 +111,21 @@ $page = "Servicios" ?>
 
                     </div>
 
-                    <div class="h-100 p-0 imagenes_servicios col-12 col-md-4 col-lg-4 col-xl-4">
-                        <img class="h-100 rounded" src="images/corretaje1.jpg" alt="">
+                    <div class="imagen mb-3 mb-lg-0 mb-xl-0 order-1 order-lg-2 order-xl-2 col-12 col-md-6 col-xl-6">
+                        <img class="h-100 w-100 rounded" src="images/corretaje1.jpg" alt="">
                     </div>
 
                 </div>
                 <!-- CORRETAJE -->
 
                 <!-- VENTAS 3-->
-                <div class="align-items-center justify-content-center p-0 col-12 flex-wrap d-flex mb-5">
+                <div class="mt-5 col-12 d-flex flex-wrap">
 
-                    <div class="p-0 h-100 imagenes_servicios col-12 col-md-4 col-xl-4 col-lg-4">
-                        <img class="rounded h-100 " src="images/ventas.png" alt="">
+                    <div class="imagen mb-3 mb-lg-0 mb-xl-0 col-12 col-md-6 col-xl-6">
+                        <img class="rounded h-100 w-100" src="images/ventas.png" alt="">
                     </div>
 
-                    <div class="pl-4 col-12 col-md-8 col-xl-8 col-lg-8 text-justify mt-3">
+                    <div class="col-12 col-md-6 col-xl-6">
 
                         <div class="d-flex align-items-center justify-content-center">
                             <div id="ancla3" class="ancla"></div>
@@ -137,14 +136,14 @@ $page = "Servicios" ?>
                         <p> <?php echo $texto_servicios['ventas']['parrafo'] ?> </p>
 
                     </div>
-                </div>
+                </div>  
 
                 <!-- VENTAS -->
 
                 <!-- AVALUOS 4-->
-                <div class="align-items-center justify-content-center p-0 col-12 d-flex mb-5">
+                <div class="mt-5 col-12 d-flex flex-wrap">
 
-                    <div class="pr-4 col-12 col-md-8 col-lg-8 col-xl-8 text-justify mt-3">
+                    <div class="order-2 order-lg-1 order-xl-1 col-12 col-md-6 col-xl-6">
 
                         <div class="d-flex align-items-center justify-content-center">
                             <div id="ancla4" class="ancla"></div>
@@ -156,20 +155,20 @@ $page = "Servicios" ?>
 
                     </div>
 
-                    <div class="p-0 h-100 imagenes_servicios col-12 col-md-4 col-lg-4 col-xl-4">
-                        <img class="rounded h-100 " src="images/avaluos.png" alt="">
+                    <div class="imagen mb-3 mb-lg-0 mb-xl-0 order-1 order-lg-2 order-xl-2 col-12 col-md-6 col-xl-6">
+                        <img class="rounded h-100 w-100" src="images/avaluos.png" alt="">
                     </div>
                 </div>
                 <!-- AVALUOS -->
 
                 <!-- ASISTENCIAS LOCATIVAS 5-->
-                <div class="align-items-center justify-content-center p-0 col-12 d-flex mb-5">
+                <div class="mt-5 col-12 d-flex flex-wrap">
 
-                    <div class="h-100 p-0 imagenes_servicios col-12 col-md-4 col-lg-4 col-xl-4">
-                        <img class="h-100 rounded" src="images/locativas.png" alt="">
+                    <div class="imagen mb-3 mb-lg-0 mb-xl-0 col-12 col-md-6 col-xl-6">
+                        <img class="h-100 w-100 rounded" src="images/locativas.png" alt="">
                     </div>
 
-                    <div class="pl-4 col-12 col-md-8 col-lg-8 col-xl-8 text-justify mt-3">
+                    <div class="col-12 col-md-6 col-xl-6">
 
                         <div class="d-flex align-items-center justify-content-center">
                             <div id="ancla5" class="ancla"></div>
@@ -182,6 +181,9 @@ $page = "Servicios" ?>
 
                 </div>
                 <!-- ASISTENCIAS LOCATIVAS -->
+
+
+
 
 
             </div>

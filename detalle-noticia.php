@@ -41,33 +41,29 @@ $page = "Blog" ?>
 
     <!-- Contenido Blog -->
     <section class="my-5">
-        <div class="container">
-            <div class="col-12">
-                <div class="container-fluid cont_noticias pb-5">
-                    <div class="container my-5">
-                        <div class="col-12 text-center mb-4">
-                            <h2><?php echo $nombre ?></h2>
-                        </div>
-                        <div class="col-12">
-                            <img id="cont_img_noticia" class="img-fluid-top mr-4 img_notica" style="float: left;" src="<?php echo $ruta_imagen ?>" alt="">
-                            <p class="text-justify"> <?php echo $noticia ?></p>
-                        </div>
-                    </div>
-                    <div class="container col-10 text-center mb-4 mt-3 ">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-5 col-12">
-                                <span class="text-muted"> Publicado el: <?php echo $fecha_complete; ?></span>
-                            </div>
-                            <div class="col-lg-6 col-md-5 col-12">
-                                <?php if ($ruta_archivo != $comparador . "") {
-                                    echo '<a style="color:black;" href="' . $ruta_archivo . '" download="Noticias.pdf"><i style="color:red;" class="fas fa-file-pdf mr-3"></i>Descargar Archivo Adjunto</a>';
-                                } ?>
-                            </div>
-                        </div>
-                    </div>
-
+        <div class="container-fluid cont_noticias pb-5">
+            <div class="container my-5">
+                <div class="col-12 text-center mb-4">
+                    <h2><?php echo $nombre ?></h2>
+                </div>
+                <div class="col-12">
+                    <img id="cont_img_noticia" class="img-fluid-top mr-4 img_notica" style="float: left;" src="<?php echo $ruta_imagen ?>" alt="">
+                    <p class="text-justify"> <?php echo $noticia ?></p>
                 </div>
             </div>
+            <div class="container col-10 text-center mb-4 mt-3 ">
+                <div class="row">
+                    <div class="col-lg-6 col-md-5 col-12">
+                        <span class="text-muted"> Publicado el: <?php echo $fecha_complete; ?></span>
+                    </div>
+                    <div class="col-lg-6 col-md-5 col-12">
+                        <?php if ($ruta_archivo != $comparador . "") {
+                            echo '<a style="color:black;" href="' . $ruta_archivo . '" download="Noticias.pdf"><i style="color:red;" class="fas fa-file-pdf mr-3"></i>Descargar Archivo Adjunto</a>';
+                        } ?>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
     <!-- Contenido Blog -->

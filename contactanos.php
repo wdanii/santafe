@@ -51,10 +51,10 @@ $page = "Contáctanos" ?>
 
         <div class="container d-flex flex-wrap align-items-center justify-content-center">
 
-            <div class="col-4 mt-5">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 mt-5">
                 <div class="card">
 
-                    <div class="m-auto d-flex align-items-center p-4">
+                    <div class="m-auto d-flex align-items-center py-xl-4 px-4 py-0">
                         <i id="icono" class="azul mx-2 fas fa-map-marker-alt"> </i>
                         <p> <?php echo $datos_contacto['direccion']['direccion'] ?> </p>
                     </div>
@@ -62,7 +62,7 @@ $page = "Contáctanos" ?>
                 </div>
             </div>
 
-            <div class="col-4 mt-5">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 mt-5">
                 <a href="mailto: <?php echo $datos_contacto['correo']['correo'] ?>" class="card">
 
                     <div class="m-auto d-flex align-items-center p-4">
@@ -73,7 +73,7 @@ $page = "Contáctanos" ?>
                 </a>
             </div>
 
-            <div class="col-4 mt-5">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 mt-5">
                 <a href="tel: <?php echo $datos_contacto['celular']['link'] ?>" class="card">
 
                     <div class="m-auto d-flex align-items-center p-4">
@@ -85,7 +85,7 @@ $page = "Contáctanos" ?>
             </div>
 
 
-            <div class="col-4 mt-5">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 mt-5">
                 <a href="tel: <?php echo $datos_contacto['telefono_fijo']['link'] ?>" class="card">
 
                     <div class="m-auto d-flex align-items-center p-4">
@@ -97,7 +97,7 @@ $page = "Contáctanos" ?>
             </div>
 
 
-            <div class="col-4 mt-5">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 mt-5">
                 <div class="card">
 
                     <a target="blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>" class="m-auto d-flex align-items-center p-4">
@@ -108,10 +108,10 @@ $page = "Contáctanos" ?>
                 </div>
             </div>
 
-            <div class="col-4 mt-5">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 mt-5">
                 <div class="card">
 
-                    <div class="m-auto d-flex align-items-center p-4">
+                    <div class="m-auto d-flex align-items-center py-xl-4 px-4 py-0">
                         <i id="icono" class="azul mx-2 fas fa-calendar-alt"> </i>
                         <p> <?php echo $datos_contacto['horario']['horario'] ?> </p>
                     </div>
@@ -155,7 +155,7 @@ $page = "Contáctanos" ?>
 
                 <div class="ml-3 form-group form-check">
                     <input type="checkbox" class="form-check-input" required>
-                    <label class="form-check-label" for="exampleCheck1"> Confimo que he leído, entendido y acepto la <a class="tratamiento" target="_blank" href="archivos/politica_tratamiendo_datos.pdf" download="Politica de protección de datos"></span>política de tratamiento de datos personales.</a> </label>
+                    <label class="form-check-label text-left" for="exampleCheck1"> Confirmo que he leído, entendido y acepto la <a class="tratamiento" target="_blank" href="archivos/politica_tratamiendo_datos.pdf" download="Politica de protección de datos"></span>política de tratamiento de datos personales.</a> </label>
                 </div>
 
 
