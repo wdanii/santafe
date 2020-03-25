@@ -59,7 +59,7 @@ $page = "Detalle de Inmueble" ?>
     <section id="banner" class="margen_top">
 
         <div style="overflow:hiddden;" class="imagen position-absolute">
-            <img style="position:absolute; top:-94px" src="images/banner_detalle_inmueble.jpg" alt="">
+            <img src="images/banner_detalle_inmueble.jpg" alt="">
         </div>
 
         <div class="fondo_negro position-absolute">
@@ -239,7 +239,7 @@ $page = "Detalle de Inmueble" ?>
 
                             <i class="azul fas fa-envelope mr-2"></i>
                             <a href="mailto:<?php echo $asesor['correo']; ?>">
-                                <p> <?php echo $asesor['correo']; ?> </p>
+                                <p class="text-break"> <?php echo $asesor['correo']; ?> </p>
                             </a>
                         </div>
 
