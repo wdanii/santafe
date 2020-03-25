@@ -33,9 +33,9 @@ function modelo_asesor($r)
     for ($i = 0; $i < count($r); $i++) {
         $ruta_imagen = "./Santafe_Admin/admin/" . $r[$i]['imagen'];
         echo '
-     <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+     <div class="col-12 col-md-6 col-lg-4 col-xl-4">
                     
-                        <div class="card2">
+                        <div class="card2 col-12 col-md-6 col-lg-4 col-xl-4">
 
                             <div class="imagen">
                                 <img src="' . $ruta_imagen . '" class="card-img-top" alt="...">
@@ -72,8 +72,13 @@ function modelo_asesor($r)
                             </div>
                             <br>
                         </div>
+
+                        
+                        
                     
                 </div>
+
+        </div>
     ';
     }
 }

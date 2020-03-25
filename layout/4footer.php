@@ -38,7 +38,7 @@
             <div>
                 <a class="blanco align-items-center d-flex" href="mailto:<?php echo $datos_contacto['correo']['correo'] ?>">
                     <i class="mr-2 <?php echo $datos_contacto['correo']['icono'] ?>"></i>
-                    <p><?php echo $datos_contacto['correo']['correo'] ?></p>
+                    <p class="correo_movil"><?php echo $datos_contacto['correo']['correo'] ?></p>
                 </a>
             </div>
 

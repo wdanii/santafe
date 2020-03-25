@@ -194,7 +194,7 @@ $page = "Detalle de Inmueble" ?>
                         <div class="d-flex align-items-center col-6 p-0 mt-2">
                             <i class="azul mr-2 fas fa-user-tie"></i>
                             <p class="mr-2"> Administración: $ <?php echo $administracion  ?></p>
-                             
+
                         </div>
 
                     </div>
@@ -273,6 +273,78 @@ $page = "Detalle de Inmueble" ?>
                     </div>
                     <!-- FORMULARIO DE CONTACTO-->
 
+                    <!-- CONTENIDO DE INMUEBLE (RESPONSIVE) -->
+
+                    <div class="d-block d-lg-none d-xl-none">
+                        <div class="my-5">
+                            <h4 class="text-center mb-3"> Descripción </h4>
+                            <p style="text-align: justify;"><?php echo $descripcion ?></p>
+                        </div>
+                        <div class="my-5">
+                            <?php
+                            if (count($r['caracteristicasExternas']) > 0) {
+                                echo
+                                    '<div class="col-md-12" style="margin-bottom: 12px;">
+                                        <h4 class="property-single-detail-title"><strong>Características Externas</strong></h4>
+                                            <ul>';
+                                for ($i = 0; $i < count($r['caracteristicasExternas']); $i++) {
+                                    $caracteristicas = ltrim($r['caracteristicasExternas'][$i]['Descripcion']);
+                                    echo '<li>' . $caracteristicas . '</li>';
+                                }
+                                echo  '</ul>
+                                    </div>
+                                ';
+                            }
+                            ?>
+                        </div>
+
+                        <div class="my-5">
+                            <?php
+                            if (count($r['caracteristicasAlrededores']) > 0) {
+                                echo
+                                    '<div class="col-md-12" style="margin-bottom: 12px;">
+                                        <h4 class="property-single-detail-title"><strong>Características de los alrededores</strong></h4>
+                                            <ul>';
+                                for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {
+                                    $caracteristicas = ltrim($r['caracteristicasAlrededores'][$i]['Descripcion']);
+                                    echo '<li>' . $caracteristicas . '</li>';
+                                }
+                                echo  '</ul>
+                                    </div>
+                                ';
+                            }
+                            ?>
+                        </div>
+
+
+                        <?php if ($r['video'] != "") {
+                            echo
+                                '<div class="video my-5">
+                                     <h4 class="property-single-detail-title">Video</h4>
+                                        <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Video</h5>
+                                        <div class="row">
+                                            <div class="col-12 col-md-4">
+                                            <iframe src="' . $r['video'] . '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   </div>
+                                </div>
+                                    ';
+                        } ?>
+                        <div class="col-md-12 mb-3">
+                            <h4 class="property-single-detail-title mb-3"><strong>Mapa de Ubicación</strong></h4>
+                            <div class="card mapa_tamaño">
+                                <div class="">
+                                    <div id="map" class="w-100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CONTENIDO DE INMUEBLE (RESPONSIVE) -->
+
                     <!-- PROPIEDADES DESTACADAS -->
                     <section id="propiedades_destacadas" class="mt-5">
 
@@ -306,69 +378,71 @@ $page = "Detalle de Inmueble" ?>
 
                 <!-- CONTENIDO DE INMUEBLE -->
 
-                <div class="my-5">
-                    <h4 class="text-center mb-3"> Descripción </h4>
-                    <p style="text-align: justify;"><?php echo $descripcion ?></p>
-                </div>
-                <div class="my-5">
-                    <?php
-                    if (count($r['caracteristicasExternas']) > 0) {
-                        echo
-                            '<div class="col-md-12" style="margin-bottom: 12px;">
-                                    <h4 class="property-single-detail-title"><strong>Características Externas</strong></h4>
-                                        <ul>';
-                        for ($i = 0; $i < count($r['caracteristicasExternas']); $i++) {
-                            $caracteristicas = ltrim($r['caracteristicasExternas'][$i]['Descripcion']);
-                            echo '<li>' . $caracteristicas . '</li>';
+                <div class="d-none d-lg-block d-xl-block">
+                    <div class="my-5">
+                        <h4 class="text-center mb-3"> Descripción </h4>
+                        <p style="text-align: justify;"><?php echo $descripcion ?></p>
+                    </div>
+                    <div class="my-5">
+                        <?php
+                        if (count($r['caracteristicasExternas']) > 0) {
+                            echo
+                                '<div class="col-md-12" style="margin-bottom: 12px;">
+                                        <h4 class="property-single-detail-title"><strong>Características Externas</strong></h4>
+                                            <ul>';
+                            for ($i = 0; $i < count($r['caracteristicasExternas']); $i++) {
+                                $caracteristicas = ltrim($r['caracteristicasExternas'][$i]['Descripcion']);
+                                echo '<li>' . $caracteristicas . '</li>';
+                            }
+                            echo  '</ul>
+                                    </div>
+                                ';
                         }
-                        echo  '</ul>
-                                </div>
-                            ';
-                    }
-                    ?>
-                </div>
+                        ?>
+                    </div>
 
-                <div class="my-5">
-                    <?php
-                    if (count($r['caracteristicasAlrededores']) > 0) {
-                        echo
-                            '<div class="col-md-12" style="margin-bottom: 12px;">
-                                    <h4 class="property-single-detail-title"><strong>Características de los alrededores</strong></h4>
-                                        <ul>';
-                        for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {
-                            $caracteristicas = ltrim($r['caracteristicasAlrededores'][$i]['Descripcion']);
-                            echo '<li>' . $caracteristicas . '</li>';
+                    <div class="my-5">
+                        <?php
+                        if (count($r['caracteristicasAlrededores']) > 0) {
+                            echo
+                                '<div class="col-md-12" style="margin-bottom: 12px;">
+                                        <h4 class="property-single-detail-title"><strong>Características de los alrededores</strong></h4>
+                                            <ul>';
+                            for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {
+                                $caracteristicas = ltrim($r['caracteristicasAlrededores'][$i]['Descripcion']);
+                                echo '<li>' . $caracteristicas . '</li>';
+                            }
+                            echo  '</ul>
+                                    </div>
+                                ';
                         }
-                        echo  '</ul>
-                                </div>
-                            ';
-                    }
-                    ?>
-                </div>
+                        ?>
+                    </div>
 
 
-                <?php if ($r['video'] != "") {
-                    echo
-                        '<div class="video my-5">
-                                 <h4 class="property-single-detail-title">Video</h4>
-                                    <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Video</h5>
-                                    <div class="row">
-                                        <div class="col-12 col-md-4">
-                                        <iframe src="' . $r['video'] . '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <?php if ($r['video'] != "") {
+                        echo
+                            '<div class="video my-5">
+                                     <h4 class="property-single-detail-title">Video</h4>
+                                        <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Video</h5>
+                                        <div class="row">
+                                            <div class="col-12 col-md-4">
+                                            <iframe src="' . $r['video'] . '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
                                         </div>
                                     </div>
+                                   </div>
                                 </div>
-                               </div>
+                                    ';
+                    } ?>
+                    <div class="col-md-12 mb-3">
+                        <h4 class="property-single-detail-title mb-3"><strong>Mapa de Ubicación</strong></h4>
+                        <div class="card mapa_tamaño">
+                            <div class="">
+                                <div id="map" class="w-100"></div>
                             </div>
-                                ';
-                } ?>
-                <div class="col-md-12 mb-3">
-                    <h4 class="property-single-detail-title mb-3"><strong>Mapa de Ubicación</strong></h4>
-                    <div class="card mapa_tamaño">
-                        <div class="">
-                            <div id="map" class="w-100"></div>
                         </div>
                     </div>
                 </div>

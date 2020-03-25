@@ -41,7 +41,7 @@ $page = "Inmuebles" ?>
     <!-- BANNER -->
 
     <!-- BUSCADOR -->
-    <section id="formulario" class="espacio_top">
+    <section id="formulario" style="bottom:100px;" class="espacio_top">
 
         <?php include 'layout/buscador.php' ?>
 

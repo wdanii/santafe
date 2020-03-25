@@ -287,7 +287,7 @@ $page = "Inicio" ?>
                 <div class="carousel-item active">
 
 
-                    <div class="d-flex">
+                    <div class="d-flex flex_tablet">
                         <div class="col-3"> <img class="h-100 d-block w-100" src="images/solidaria.png" alt=""></div>
                         <div class="col-3"> <img class="h-100 d-block w-100" src="images/caja_social.png" alt=""></div>
                         <div class="col-3"> <img class="h-100 d-block w-100" src="images/afiansa.png" alt=""></div>
@@ -298,7 +298,7 @@ $page = "Inicio" ?>
 
                 <div class="carousel-item">
 
-                    <div class="d-flex">
+                    <div class="d-flex flex_tablet">
                         <div class="col-3"> <img class="h-100 d-block w-100" src="images/liberty.png" alt=""></div>
                         <div class="col-3"> <img class="d-block w-100 protecsa" src="images/protecsa.png" alt=""></div>
                         <div class="col-3"> <img class="h-100 d-block w-100" src="images/seguros_estado.png" alt=""></div>

@@ -761,9 +761,24 @@ footer {
 
 }
 
+@media (max-width: 768px) and (min-width:700px) {
+    .flex_tablet {
+        height: 66px!important;
+
+        .protecsa {
+            height: initial!important;
+        }
+    }
+}
+
 @media (max-width:768px) {
     .margen_top {
         margin-top: 192px;
+    }
+
+    
+    #formulario {
+        bottom: inherit;
     }
 }
 
@@ -775,9 +790,6 @@ footer {
         }
     }
 
-    #formulario {
-        bottom: inherit;
-    }
 
     .linea {
         font-size: 24px;
@@ -793,4 +805,10 @@ footer {
 
 .afianza {
     height: 100px;
+}
+
+@media (max-width: 320px) {
+    .correo_movil {
+        font-size: 16px;
+    }
 }
