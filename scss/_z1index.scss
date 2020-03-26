@@ -742,21 +742,10 @@ footer {
     &:before {
         content: '';
         position: absolute;
-        width: 20%;
-        top: calc(50% + 2px);
+        width: 100%;
+       bottom: 0;
         height: 2px;
         background-color: $azul;
-        left: -23%;
-    }
-
-    &:after {
-        content: '';
-        position: absolute;
-        width: 20%;
-        top: calc(50% + 2px);
-        height: 2px;
-        background-color: $azul;
-        margin-left: 10px;
     }
 
 }
