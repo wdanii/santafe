@@ -26,7 +26,7 @@ $page = "Inmuebles" ?>
     <section id="banner" class="margen_top">
 
         <div class="imagen position-absolute">
-            <img src="images/banner_inmuebles.jpg" alt="">
+            <img src="images/slider_3.jpg" alt="">
         </div>
 
         <div class="fondo_negro position-absolute">
@@ -79,7 +79,7 @@ $page = "Inmuebles" ?>
                 <?php if (is_array($api)) : ?>
                     <ul class="pagination mt-4 align-items-end justify-content-center">
                         <?php if ($paginator->getPrevUrl()) : ?>
-                            <li class="page-item"><a href="<?php echo $paginator->getPrevUrl(); ?>" class="page-link">&laquo; Atras</a></li>
+                            <li class="page-item"><a href="<?php echo $paginator->getPrevUrl(); ?>" class="page-link">&laquo; </a></li>
                         <?php endif; ?>
                         <?php foreach ($paginator->getPages() as $page) : ?>
                             <?php if ($page['url']) : ?>
@@ -92,7 +92,7 @@ $page = "Inmuebles" ?>
                         <?php endforeach; ?>
 
                         <?php if ($paginator->getNextUrl()) : ?>
-                            <li class="page-item"><a href="<?php echo $paginator->getNextUrl(); ?>" class="page-link">Siguiente &raquo;</a></li>
+                            <li class="page-item"><a href="<?php echo $paginator->getNextUrl(); ?>" class="page-link"> &raquo;</a></li>
                         <?php endif; ?>
                     </ul>
                 <?php endif; ?>

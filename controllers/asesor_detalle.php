@@ -35,7 +35,7 @@ function modelo_asesor($r)
         echo '
      <div class="col-12 col-md-6 col-lg-4 col-xl-4">
                     
-                        <div class="card2 col-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card2 mx-auto col-12 col-md-6 col-lg-4 col-xl-4">
 
                             <div class="imagen">
                                 <img src="' . $ruta_imagen . '" class="card-img-top" alt="...">
